@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Violacao_do_tempo_de_caso</fullName>
+        <description>Violação do tempo de caso</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>gerente@teste.com.br</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Tempo_Limite_de_Caso_1708893525543</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

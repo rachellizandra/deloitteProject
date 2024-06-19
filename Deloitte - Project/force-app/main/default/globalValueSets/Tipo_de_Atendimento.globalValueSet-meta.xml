@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Automotivo</fullName>
+        <default>false</default>
+        <label>Automotivo</label>
+    </customValue>
+    <customValue>
+        <fullName>Residencial</fullName>
+        <default>false</default>
+        <label>Residencial</label>
+    </customValue>
+    <customValue>
+        <fullName>Comercial</fullName>
+        <default>false</default>
+        <label>Comercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Outros</fullName>
+        <default>false</default>
+        <label>Outros</label>
+    </customValue>
+    <masterLabel>Tipo de Atendimento</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

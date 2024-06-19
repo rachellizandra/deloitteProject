@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>Caso via Email</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Email</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <senderEmail>rachellizandra@outlook.com</senderEmail>
+            <senderName>Resposta automática</senderName>
+            <template>unfiled$public/Resposta_Automatica</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>Novo Caso</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Case.Status</field>
+                <operation>equals</operation>
+                <value>New</value>
+            </criteriaItems>
+            <notifyCcRecipients>true</notifyCcRecipients>
+            <senderEmail>rachel.lizandra@dreamxp.com.br</senderEmail>
+            <senderName>Rachel Lizandra</senderName>
+            <template>unfiled$public/Notifica_Novo_Caso</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

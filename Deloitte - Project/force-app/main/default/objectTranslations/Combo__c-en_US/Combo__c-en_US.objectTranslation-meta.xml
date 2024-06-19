@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Combo</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Combos</value>
+    </caseValues>
+    <layouts>
+        <layout>Layout de Combo</layout>
+        <sections>
+            <label><!-- Links personalizados --></label>
+            <section>Links personalizados</section>
+        </sections>
+        <sections>
+            <label><!-- Produtos --></label>
+            <section>Produtos</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

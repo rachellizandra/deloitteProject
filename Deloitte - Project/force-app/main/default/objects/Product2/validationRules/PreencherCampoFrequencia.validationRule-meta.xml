@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreencherCampoFrequencia</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+    ISPICKVAL(Family, &apos;Dedetização&apos;),
+				ISPICKVAL(Tipo_de_Produto__c, &apos;Contrato&apos;),
+				ISBLANK(Frequencia__c)
+)</errorConditionFormula>
+    <errorMessage>Para Tipo de Produto &quot;Contrato&quot;, o campo Frequência é obrigatório.</errorMessage>
+</ValidationRule>

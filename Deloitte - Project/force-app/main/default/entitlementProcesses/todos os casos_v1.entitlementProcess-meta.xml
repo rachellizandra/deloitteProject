@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>Case</SObjectType>
+    <active>true</active>
+    <entryStartDateField>Case.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>Case.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>true</isVersionDefault>
+    <milestones>
+        <milestoneName>Primeira Resposta do Cliente</milestoneName>
+        <minutesToComplete>5</minutesToComplete>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <milestoneCriteriaFilterItems>
+            <field>Case.IsClosed</field>
+            <operation>notEqual</operation>
+            <value>false</value>
+        </milestoneCriteriaFilterItems>
+        <milestoneName>Fechar Caso</milestoneName>
+        <minutesToComplete>15</minutesToComplete>
+        <timeTriggers>
+            <actions>
+                <name>Case.Violacao_do_tempo_de_caso</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>15</timeLength>
+            <workflowTimeTriggerUnit>Minutes</workflowTimeTriggerUnit>
+        </timeTriggers>
+        <useCriteriaStartTime>false</useCriteriaStartTime>
+    </milestones>
+    <name>Todos os Casos</name>
+    <versionMaster>552ak0000017mAb</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>

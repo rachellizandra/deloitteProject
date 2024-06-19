@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>LeadSite</name>
+    <queueMembers>
+        <users>
+            <user>integration@00dak000000cfaveaq.com</user>
+            <user>rachel.lizandra@resourceful-panda-qz5ju4.com</user>
+            <user>insightssecurity@00dak000000cfaveaq.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

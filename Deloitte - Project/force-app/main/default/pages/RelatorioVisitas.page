@@ -1,0 +1,34 @@
+<apex:page renderAs="pdf" title="Relatório de Visitas e Despesas" contentType="application/pdf" showHeader="false" sidebar="false" standardStylesheets="false" standardController="Account" extensions="RelatorioVisitasCTRL" applyBodyTag="false" applyHtmlTag="false" cache="false">
+	<head>
+	  	<style>
+            @page {
+                size: A4 landscape;
+                margin: 0mm;
+                padding: 5mm;
+          	}
+            body { 
+            	font-family: Dialog !important; 
+            	font-size: 14pt;
+            }
+            html, body{
+                margin: 0;
+                padding: 0;
+      		}
+            .page-break {
+				display: block;
+                page-break-after: always;
+            }
+            .container{
+                position: relative;
+                margin: 0px;
+                padding: 0px;
+            }
+            table {
+               -fs-table-paginate: paginate;
+            }
+            table tr, th, tbody, thead {
+              page-break-inside: avoid;
+            }
+        </style>
+    </head>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreencherCampoMotivoDaPerda</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+    ISPICKVAL(StageName, &apos;Perdida&apos;),
+				ISBLANK(Motivo_da_Perda__c)
+)</errorConditionFormula>
+    <errorMessage>Campo Motivo da Perda é obrigatório.</errorMessage>
+</ValidationRule>

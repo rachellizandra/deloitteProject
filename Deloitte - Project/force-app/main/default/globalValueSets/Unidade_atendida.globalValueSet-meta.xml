@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Andar</fullName>
+        <default>false</default>
+        <label>Andar</label>
+    </customValue>
+    <customValue>
+        <fullName>Apartamento</fullName>
+        <default>false</default>
+        <label>Apartamento</label>
+    </customValue>
+    <customValue>
+        <fullName>Caminhão</fullName>
+        <default>false</default>
+        <label>Caminhão</label>
+    </customValue>
+    <customValue>
+        <fullName>Carro</fullName>
+        <default>false</default>
+        <label>Carro</label>
+    </customValue>
+    <customValue>
+        <fullName>Casa</fullName>
+        <default>false</default>
+        <label>Casa</label>
+    </customValue>
+    <customValue>
+        <fullName>Condomínio (Externo)</fullName>
+        <default>false</default>
+        <label>Condomínio (Externo)</label>
+    </customValue>
+    <customValue>
+        <fullName>Fazenda</fullName>
+        <default>false</default>
+        <label>Fazenda</label>
+    </customValue>
+    <customValue>
+        <fullName>Galpão</fullName>
+        <default>false</default>
+        <label>Galpão</label>
+    </customValue>
+    <customValue>
+        <fullName>Ônibus</fullName>
+        <default>false</default>
+        <label>Ônibus</label>
+    </customValue>
+    <customValue>
+        <fullName>Sala comercial</fullName>
+        <default>false</default>
+        <label>Sala comercial</label>
+    </customValue>
+    <customValue>
+        <fullName>Sítio</fullName>
+        <default>false</default>
+        <label>Sítio</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilitário</fullName>
+        <default>false</default>
+        <label>Utilitário</label>
+    </customValue>
+    <masterLabel>Unidade atendida</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

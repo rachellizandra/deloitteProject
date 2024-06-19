@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowDefinition>Gerar_Contratos_e_Ativos</flowDefinition>
+    <label>Gerar Ativos</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

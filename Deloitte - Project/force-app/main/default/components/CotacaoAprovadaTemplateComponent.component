@@ -1,0 +1,24 @@
+<apex:component controller="CotacaoAprovadaTemplateController" access="global">
+    <apex:attribute name="idCotacao" description="Id da Cotação" type="String" assignTo="{!quoteId}"/>
+    
+    <table border="1">
+        <thead>
+        	<th>Produto</th>
+            <th>Quantidade</th>
+            <th>Total sem Desconto</th>
+            <th>Desconto</th>
+            <th>Total com Desconto</th>
+        </thead>
+    </table>
+    <table>
+        <apex:repeat value="{!items}" var="item">
+            <tr>
+                <td>{!item.Product2.Name}</td>
+                <td>{!item.Quantity}</td>
+                <td>{!item.Subtotal}</td>
+                <td>{!item.Discount}</td>
+                <td>{!item.TotalPrice}</td>
+            </tr>
+        </apex:repeat>
+    </table>
+</apex:component>
